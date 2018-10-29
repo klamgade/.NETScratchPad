@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DotNetCrud.Models.Item>
+    ViewBag.Title = "GetItems";
+}
+
+<h2>GetItems</h2>
+
+<div>
+    @foreach( var item in Model)
+    {
+        <p>@item.Name</p>
+    }
+</div>
+
+
