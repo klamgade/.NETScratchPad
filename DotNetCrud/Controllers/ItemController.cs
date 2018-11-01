@@ -31,8 +31,8 @@ namespace DotNetCrud.Controllers
             {
                 _dbContext.Items.Add(item);
                 _dbContext.SaveChanges();
+                return RedirectToAction("index", new { id = item.Id });
             }
-            return View();
         }
 
         [HttpGet]
