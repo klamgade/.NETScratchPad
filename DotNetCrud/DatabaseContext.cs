@@ -16,5 +16,7 @@ namespace DotNetCrud
 
         //collection of entity classes
         public DbSet<Item> Items { get; set; }
+        public DbSet<Member> Members { get; set; }
+        public DbSet<MembershipType> MembershipTypes { get; set; }
     }
 }
